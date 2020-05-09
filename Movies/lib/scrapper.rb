@@ -4,6 +4,10 @@ require 'pry'
 class Scrapper
 
 def self.scrape_movie_page(movie_url)
+  html = open(movie_url)
+  doc = Nokogiri::HTML(html)
+  movies=[]
+  
 
 end
 
