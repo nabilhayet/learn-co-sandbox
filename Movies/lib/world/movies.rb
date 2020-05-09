@@ -1,5 +1,5 @@
 class Movies
-  attr_accessor :name, :director, :genre, :rating
+  attr_accessor :name, :director, :genre, :rating, :cast
   @@all =[]
 
   def initialize(movie_hash)
@@ -7,6 +7,10 @@ class Movies
       self.send("#{key}=", "#{value}")
       @@all << self
     end
+  end
+
+  def self.all
+    @@all 
   end
 
 end

@@ -2,6 +2,6 @@
 require "pry"
 require "nokogiri"
 
-require_relative "./lib/cli"
-require_relative "./lib/movies"
-require_relative "./lib/scrapper"
+require_relative "./world/cli"
+require_relative "./world/movies"
+require_relative "./world/scrapper"
