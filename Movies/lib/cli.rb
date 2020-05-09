@@ -1,4 +1,8 @@
+require_relative "../lib/movies.rb"
+require_relative "../lib/scrapper.rb"
 require 'pry'
+require 'nokogiri'
+
 class Cli
   def call
     input = ""
