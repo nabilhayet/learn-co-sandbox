@@ -4,11 +4,13 @@ require 'pry'
 class Scrapper
 
 def self.get_movie
-  html = open("https://www.hollywoodreporter.com/lists/100-best-films-ever-hollywood-favorites-818512/item/bonnie-clyde-hollywoods-100-favorite-818478")
+  html = open("https://www.afi.com/afis-100-years-100-movies/")
   doc = Nokogiri::HTML(html)
-
-  movies=[]
-  
-end
-
+  post= doc.css("div .movie_popup")
+    name = []
+    post.search("h6").select do |a|
+    name << a.text
+      end
+      binding.pry
+    end
 end
