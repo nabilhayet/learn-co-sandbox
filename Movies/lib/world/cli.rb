@@ -25,13 +25,17 @@ end
   #   end
   #
   # def list_movies
-  #
+  #   Movies.all.select{|movie| movie.name}
   # end
   #
   # def list_director
-  #
+  #   Director.all.select{|direct| direct.name}
   # end
   #
-  # def list_genres
-  #
+  # def list_producer
+  #   Producer.all.select{|produce| produce.name}
+  # end
+  
+  # def list_writer
+  #   Writer.all.select{|writer| writer.name}
   # end

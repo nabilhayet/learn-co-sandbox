@@ -3,7 +3,12 @@ class Movies
   @@all =[]
 
   def initialize(name,year,cast,director,producer,writer)
-    
+    @name = name
+    @year =year
+    @cast = cast
+    @director = director
+    @producer = producer
+    @writer = writer 
     @@all << self
   end
 
