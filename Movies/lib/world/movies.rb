@@ -18,7 +18,6 @@ class Movies
 
   def self.find_by_name(m_name)
     movie = @@all.find{|movie| movie.movie_name==m_name}
-    movie
   end
 
   def director=(director)
