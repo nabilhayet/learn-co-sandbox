@@ -1,4 +1,4 @@
-class Writer 
+class Writer
   attr_accessor :name
   @@all =[]
 
@@ -6,5 +6,9 @@ class Writer
     @name = name
     @@all << self
   end
+
+  def self.all
+    @@all
+  end 
 
 end

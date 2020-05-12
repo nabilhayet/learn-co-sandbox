@@ -8,7 +8,7 @@ class Movies
     @cast = cast
     @director = director
     @producer = producer
-    @writer = writer 
+    @writer = writer
     @@all << self
   end
 
@@ -16,10 +16,12 @@ class Movies
     @@all
   end
 
-  def find_or_create_by_name
+  def self.find_by_name(name)
+    movie = @@all.find{|movie| movie.name==name}
   end
 
-  def find_by_name
+  def add_movie(movie)
+    
   end
 
 end
