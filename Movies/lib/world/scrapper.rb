@@ -57,11 +57,11 @@ def self.get_movie
                   movie = Movies.find_by_name(f)
 
                     if movie
-                      movie
+                        movie
 
                     else
                       movie = Movies.new(f,d,e,direct,produce,write)
-                      binding.pry
+                    ##  binding.pry
                     end
                   end
                 end
